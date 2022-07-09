@@ -1,7 +1,7 @@
 from aiohttp import ClientSession
 
 
-async def get_weather(city: str) -> dict:
+async def get_weather(city: str) -> dict | str:
     """
     Get weather from WeatherbitAPI
     :param city: str
